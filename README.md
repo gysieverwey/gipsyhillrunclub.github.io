@@ -1,2 +1,2 @@
-# gipsyhillrunclub.github.io
+# Gipsyhill Runclub
 Gipsy Hill Runclub Website
