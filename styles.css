@@ -3,6 +3,7 @@
     --hover-bg-color: #DD6F10;
     --text-color: #f2f2f2;
     --link-padding: 14px 16px;
+    --light-grey-background: #f7f7f7; /* Variable for light grey background */
 }
 
 body {
@@ -14,6 +15,7 @@ body {
 
 .header-logo {
     height: 150px;
+    width: auto;
 }
 
 .header {
@@ -59,7 +61,7 @@ body {
 
 .content-image {
     height: auto;
-    width: 30%;
+    width: 30%; /* Default width for desktop */
 }
 
 .content-text {
@@ -76,9 +78,9 @@ body {
 }
 
 .photo-gallery img {
+    width: 100%;
     height: auto;
     transition: transform 0.2s;
-    width: 100%;
 }
 
 .photo-gallery img:hover {
@@ -89,4 +91,32 @@ body {
     background: var(--primary-bg-color);
     margin-top: 1em;
     padding: 1em;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+    .header-logo {
+        height: 100px; /* Smaller logo for mobile */
+    }
+
+    .content-item {
+        flex-direction: column; /* Stack content vertically on smaller screens */
+    }
+
+    .content-image {
+        width: 100%; /* Full width for images on mobile */
+    }
+
+    .content-text {
+        padding-right: 0;
+        padding-bottom: 20px; /* Space between text and image when stacked */
+    }
+
+    .navbar a {
+        padding: 10px 12px; /* Smaller padding for navbar links on mobile */
+    }
+
+    .photo-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust gallery item size on smaller screens */
+    }
 }
