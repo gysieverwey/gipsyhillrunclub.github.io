@@ -4,7 +4,7 @@
     --text-color: #f2f2f2;
     --link-padding: 14px 16px;
     --light-grey-background: #f7f7f7; /* Variable for light grey background */
-	--cta-bg-color: #FFFF00; /* Default yellow background for the CTA banner */
+    --cta-bg-color: #FFFF00; /* Default yellow background for the CTA banner */
     --cta-text-size: 1em; /* Default text size for the CTA */
 }
 
