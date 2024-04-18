@@ -4,6 +4,26 @@
     --text-color: #f2f2f2;
     --link-padding: 14px 16px;
     --light-grey-background: #f7f7f7; /* Variable for light grey background */
+	--cta-bg-color: #FFFF00; /* Default yellow background for the CTA banner */
+    --cta-text-size: 1em; /* Default text size for the CTA */
+}
+
+.cta-banner {
+    background-color: var(--cta-bg-color);
+    text-align: center;
+    padding: 10px 0;  /* Increase padding for more space inside the banner */
+    margin: 10px 10px;  /* Add margin to create space around the banner */
+}
+
+.cta-banner a {
+    color: black;
+    font-size: var(--cta-text-size);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-banner a:hover {
+    color: var(--hover-bg-color);
 }
 
 body {
@@ -91,6 +111,7 @@ body {
     background: var(--primary-bg-color);
     margin-top: 1em;
     padding: 1em;
+	text-align:center;
 }
 
 /* Responsive adjustments for mobile devices */
